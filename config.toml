@@ -1,5 +1,5 @@
 baseURL = "http://www.example.com"
-title = "johndoe"
+title = "damoun ayman"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -12,11 +12,11 @@ enableEmoji = true
 # disqusShortname = "yourdiscussshortname"
 
 [params]
-author = "John Doe"
+author = "Ayman DAMOUN"
 description = "John Doe's personal website"
 keywords = "blog,developer,personal"
-info = ["Full Stack DevOps", "Magician"]
-avatarURL = "images/avatar.jpg"
+info = ["Robotics Artificial Intelligence", "Engineer"]
+avatarURL = "images/poto.jpg"
 #gravatar = "john.doe@example.com"
 footerContent = "Enter a text here."
 dateFormat = "January 2, 2006"
@@ -103,45 +103,19 @@ author = "authors"
 name = "Github"
 icon = "fa fa-github"
 weight = 1
-url = "https://github.com/johndoe/"
-
-[[params.social]]
-name = "Gitlab"
-icon = "fa fa-gitlab"
-weight = 2
-url = "https://gitlab.com/johndoe/"
-
-[[params.social]]
-name = "Twitter"
-icon = "fa fa-twitter"
-weight = 3
-url = "https://twitter.com/johndoe/"
+url = "https://github.com/damounayman"
 
 [[params.social]]
 name = "LinkedIn"
 icon = "fa fa-linkedin"
 weight = 4
-url = "https://www.linkedin.com/in/johndoe/"
-
-[[params.social]]
-name = "Medium"
-icon = "fa fa-medium"
-weight = 5
-url = "https://medium.com/@johndoe"
-
-[[params.social]]
-name = "RSS"
-icon = "fa fa-rss"
-weight = 6
-url = "https://myhugosite.com/index.xml"
-rel = "alternate"
-type = "application/rss+xml"
+url = "https://www.linkedin.com/in/aymandamoun/"
 
 [languages.en]
 languageName = ":uk:"
 
 [[languages.en.menu.main]]
-name = "About"
+name = "Resume"
 weight = 1
 url = "about/"
 
@@ -160,33 +134,33 @@ name = "Contact me"
 weight = 5
 url = "contact/"
 
-[languages.pt-br]
-languageName = ":brazil:"
-title = "João Ninguém"
+[languages.fr]
+languageName = ":fr:"
+title = "damoun ayman"
 
-[languages.pt-br.params]
-author = "João Ninguém"
-info = "Full Stack DevOps e Mágico"
+[languages.fr.params]
+author = "ayman damoun"
+info = [" ingénieur en robotique et intelligence", "artificielle "]
 description = "Sítio pessoal de João Ninguém"
 keywords = "blog,desenvolvedor,pessoal"
 footerContent = "Coloque algum texto aqui."
 
-[[languages.pt-br.menu.main]]
-name = "Sobre"
+[[languages.fr.menu.main]]
+name = "à propos de"
 weight = 1
 url = "about/"
 
-[[languages.pt-br.menu.main]]
+[[languages.fr.menu.main]]
 name = "Blog"
 weight = 2
 url = "posts/"
 
-[[languages.pt-br.menu.main]]
-name = "Projetos"
+[[languages.fr.menu.main]]
+name = "Projets"
 weight = 3
 url = "projects/"
 
-[[languages.pt-br.menu.main]]
-name = "Contato"
+[[languages.fr.menu.main]]
+name = "contact"
 weight = 5
 url = "contact/"

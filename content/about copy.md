@@ -5,16 +5,14 @@ date = "2019-02-28"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
 +++
+Johnny Coder
+============
 
 -------------------     ----------------------------
 1 MyAddress                        email@example.com
 MyTown 1000                          @twitter_handle
 MyCountry                           1800 my-phone-nr
 -------------------     ----------------------------
-* [your email](email-address 'email')
-* [your website](website-url 'website')
-* [your linkedin](linkedin-url 'linkedin')
-* [your github](github-url 'github')
 
 Education
 ---------
