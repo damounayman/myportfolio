@@ -16,21 +16,21 @@ Education
 2020-2021
 :   **Master’s degree in computer science, artificial intelligence**;  Paris Saclay university (Paris)
 
-    *Some Acquired skills : Probabilistic Generative Models, Deep Learning for NLP, Reinforcement Learning, computer vision, Advanced optimization, Image Mining, Voice recognition, Automatic language processing, Text mining.*
+    - Some Acquired skills : Probabilistic Generative Models, Deep Learning for NLP, Reinforcement Learning, computer vision, Advanced optimization, Image Mining, Voice recognition, Automatic language processing, Text mining.
 
 2019-2020
 :   **Master’s degree in Advanced Systems and robotics**; Arts et Métiers & UPMC Paris VI (Paris)
 
-    *Some Acquired skills : Estimation (KALMAN - EKF - UKF...),mobile
+    - Some Acquired skills : Estimation (KALMAN - EKF - UKF...),mobile
                         robotics, robotic vision(opencv...), Motion Planning ,Robot Dynamics
-                        and Control ...*
+                        and Control ...
 
 2015-2020 
 :   **Engineer degree in Electomechanical and Industrial Systems**; Arts et Métiers (Meknès)
 
-    *Some acquired skills : mechanical and electrical
+    - Some acquired skills : mechanical and electrical
                          advanced knowledge , PLC programing ,SCADA ,embedded systems, 3d modeling
-                         and rendering ,marketing ,quality management ,Industrial maintenance ...*
+                         and rendering ,marketing ,quality management ,Industrial maintenance ...
 
 Experience
 ----------
