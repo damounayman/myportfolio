@@ -35,45 +35,24 @@ Education
 Experience
 ----------
 
-**Your Most Recent Work Experience:**
+**R&D Engineer internship:**  InterDigital (Rennes)
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+AI-driven robot from simulators to real world:
 
-* First item
+*  Implementation of an intelligent robotic system composed mainly of a manipulator arm UR3e and a mobile robot turtlebot 3 (ROS / GAZEBO).
+* The selection of a physical simulator for robotic learning. Ensuring a smooth transition from simulation to reality.
+* Positioning of the UR3e end effector using reinforcement learning algorithms (DDPG-TD3-SAC).
+* Mobile navigation with obstacle avoidance using a reinforcement learning approach (Q-Learning - DQN...)
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+**R&D Engineer internship:**
 
-**That Other Job You Had**
+Dynamic simulation of a collaborative industsrial robot's stoppage inside a secure workcell.
 
-Also with a short description.
-
-Technical Experience
---------------------
-
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
-
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
-
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
-
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
-[ref]: https://github.com/githubuser/superlongprojectname
+*  Safety standards for collaborative robots.
+*  State of the art of dynamic identification methods. 
+*  Parameters identification of ABB IRB 6640 et ABB IRB 2600 robots dynamics.
+*  Dynamic simulation of the robot collision as per SSM Safety configuration.
+*  Detection and motion tracking of the operator using depth camera.
 
 ## Skills
 
