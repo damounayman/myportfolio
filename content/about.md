@@ -68,20 +68,6 @@ Open Source
     (with [link](http://nodejs.org)) which was actually totally
     your idea...
 
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
-
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
-
 :   **obscure-but-impressive-lang:** We both know this one's pushing
     it.
 
@@ -91,10 +77,12 @@ Programming Languages
 
 ## Skills
 
-Technical: `Python` `Go` `Microservices Architecture`
+Robotics: `Modeling` `Simulation` `Controler design` `Estimation and Control techniques`
+ `SLAM` `Computer vision for robotics` `ROS`
 
-Management: `Kanban Methodology` `Scrum`
+Artificial Intelligence: `Machine Learning Algorithms` `Deep reinforcement learning` `NLP`
+`Predictive Modeling` `Deep Learning`
 
----
+OS and software: `Windows` `Linux` `MS OFFICE` `Latex` `Solidworks` `git` `Solidworks`
 
-||: Email: **<katemiller@gmail.com>** || Phone: **+123 456 789** || Website: **[katemiller.com](katemiller.com)** :||
+Programmation: `Python` `C / C++` `Matlab / simulink` `Pytorch` `tensorflow` `OpenCV` `Scikit-Learn`

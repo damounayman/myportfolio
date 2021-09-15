@@ -3,4 +3,6 @@ title = "Contact"
 slug = "contact"
 +++
 
-Follow me, @johndoe.
++ Email: [damounayman@gmail.com](damounayman@gmail.com)
++ Github: [https://github.com/damounayman](https://github.com/damounayman)
+
