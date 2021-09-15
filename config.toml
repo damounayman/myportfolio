@@ -1,4 +1,4 @@
-baseURL = "http://www.example.com"
+baseURL = "https://vigorous-meninsky-a53d09.netlify.app"
 title = "damoun ayman"
 theme = "hugo-coder"
 languageCode = "en"
