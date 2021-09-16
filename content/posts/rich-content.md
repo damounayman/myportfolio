@@ -14,6 +14,7 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 ---
 
 ## YouTube Privacy Enhanced Shortcode
+# ![png](/poto-modified.png)
 
 {{< youtube ZJthWmvUzzc >}}
 
