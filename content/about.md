@@ -37,7 +37,7 @@ Experience
 
 **R&D Engineer internship:**  InterDigital (Rennes)
 
-AI-driven robot from simulators to real world:
+AI-driven robot from simulators to real world.
 
 *  Implementation of an intelligent robotic system composed mainly of a manipulator arm UR3e and a mobile robot turtlebot 3 (ROS / GAZEBO).
 * The selection of a physical simulator for robotic learning. Ensuring a smooth transition from simulation to reality.
