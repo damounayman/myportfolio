@@ -57,6 +57,7 @@ displayFullLangName = true
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowToc = true
+favicon = "/images/favicon.png"
 images = [ "papermod-cover.png" ]
 
   [params.profileMode]
@@ -126,3 +127,6 @@ disableInlineCSS = true
 [services.twitter]
 disableInlineCSS = true
 
+
+[params.assets]
+favicon = "/images/favicon.png"
