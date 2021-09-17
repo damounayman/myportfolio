@@ -9,5 +9,3 @@ tags = [
 +++
 
 {{< embed-pdf url="./pdf/Docker.pdf" >}}
-
-{{< embed-pdf url="./pdf/Docker.pdf" hideLoader="true" >}}
