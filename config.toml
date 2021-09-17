@@ -34,6 +34,12 @@ disableXML = true
       weight = 2
 
       [[languages.en.menu.main]]
+      identifier = "cheat sheet"
+      name = "📜 cheat sheet"
+      url = "/sheet/"
+      weight = 4
+
+      [[languages.en.menu.main]]
       name = "🔍 Search"
       url = "search/"
       weight = 10
