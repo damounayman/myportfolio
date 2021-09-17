@@ -8,4 +8,4 @@ tags = [
 ]
 +++
 
-{{< embed-pdf url="/data/Docker.pdf" >}}
+{{< embed-pdf url="./pdf/Docker.pdf" >}}
