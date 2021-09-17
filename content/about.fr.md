@@ -6,20 +6,62 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
 +++
 
-Escrito em Go, Hugo é um gerador de sites estáticos de código aberto disponível sobre a licença [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) O Hugo suporta TOML, YAML e JSON como arquivos de dados, Markdown e HTML como arquivos de conteúdo, e usa shortcodes para adicionar conteúdos ricos. Outras funcionalidades notaveis são taxonomias, modo multilingual, processamento de imagens, formatos de saída customizaveis, minificação de HTML/CSS/JS e suporte a fluxos SASS/SCSS.
+-------------------     ----------------------------
+I'm an engineer in Automation, Robotics and Artificial Intelligence. Passionate by Robotics and Artificial Intelligence. I am currently looking for new opportunities in the field of Robotics and Artificial Intelligence.
+-------------------     ----------------------------
 
-O Hugo faz o uso de vários projetos de código aberto incluíndo:
+Education
+---------
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+2020-2021
+:   **Master’s degree in computer science, artificial intelligence**;  Paris Saclay university (Paris)
 
-O Hugo é ideal para blogs, sites corporativos, protfólio criativos, revistas online, aplicações de página única ou até sites com milhares de páginas.
+    - Some Acquired skills : Probabilistic Generative Models, Deep Learning for NLP, Reinforcement Learning, computer vision, Advanced optimization, Image Mining, Voice recognition, Automatic language processing, Text mining.
 
-O Hugo é para pessoas que querem cuidar do seu próprio site sem se preocupar com a configuração ambientes complicados, dependências e bancos de dados.
+2019-2020
+:   **Master’s degree in Advanced Systems and robotics**; Arts et Métiers & UPMC Paris VI (Paris)
 
-Sites contru;idos com Hugo são extremamente rápidos, seguros e podem ser implantados em qualquer lugar, incluíndo AWS, GitHub Pages, Heroku, Netlify e outros provedores de hospedagem.
+    - Some Acquired skills : Estimation (KALMAN - EKF - UKF...),mobile
+                        robotics, robotic vision(opencv...), Motion Planning ,Robot Dynamics
+                        and Control ...
 
-Saiba mais e contribua em [GitHub](https://github.com/gohugoio).
+2015-2020 
+:   **Engineer degree in Electomechanical and Industrial Systems**; Arts et Métiers (Meknès)
+
+    - Some acquired skills : mechanical and electrical
+                         advanced knowledge , PLC programing ,SCADA ,embedded systems, 3d modeling
+                         and rendering ,marketing ,quality management ,Industrial maintenance ...
+
+Experience
+----------
+
+**R&D Engineer internship:**  InterDigital (Rennes)
+
+AI-driven robot from simulators to real world.
+
+*  Implementation of an intelligent robotic system composed mainly of a manipulator arm UR3e and a mobile robot turtlebot 3 (ROS / GAZEBO).
+* The selection of a physical simulator for robotic learning. Ensuring a smooth transition from simulation to reality.
+* Positioning of the UR3e end effector using reinforcement learning algorithms (DDPG-TD3-SAC).
+* Mobile navigation with obstacle avoidance using a reinforcement learning approach (Q-Learning - DQN...)
+
+**R&D Engineer internship:**
+
+Dynamic simulation of a collaborative industsrial robot's stoppage inside a secure workcell.
+
+*  Safety standards for collaborative robots.
+*  State of the art of dynamic identification methods. 
+*  Parameters identification of ABB IRB 6640 et ABB IRB 2600 robots dynamics.
+*  Dynamic simulation of the robot collision as per SSM Safety configuration.
+*  Detection and motion tracking of the operator using depth camera.
+
+## Skills
+
+Robotics: `Modeling` `Simulation` `Controler design` `Estimation and Control techniques`
+ `SLAM` `Computer vision for robotics` `ROS`
+
+Artificial Intelligence: `Machine Learning Algorithms` `Deep reinforcement learning` `NLP`
+`Predictive Modeling` `Deep Learning`
+
+OS and software: `Windows` `Linux` `MS OFFICE` `Latex` `Solidworks` `git` `Solidworks`
+
+Programmation: `Python` `C / C++` `Matlab / simulink` `Pytorch` `tensorflow` `OpenCV` `Scikit-Learn`

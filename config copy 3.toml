@@ -72,6 +72,10 @@ images = [ "papermod-cover.png" ]
     url = "archives"
 
     [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+    [[params.profileMode.buttons]]
     name = "All Posts"
     url = "posts"
 
@@ -126,3 +130,32 @@ disableInlineCSS = true
 [services.twitter]
 disableInlineCSS = true
 
+
+[languages.fr]
+languageName = ":fr:"
+title = "Ayman DAMOUN"
+weight = 2
+
+[languages.fr.params]
+subtitle = "ingénieur en robotique et intelligence artificielle"
+
+[[languages.fr.menu.main]]
+name = "📃 Resume"
+weight = 1
+url = "about/"
+
+[[languages.fr.menu.main]]
+name = "📌 Posts"
+url = "posts"
+weight = 3
+
+[[languages.fr.menu.main]]
+identifier = "projects"
+name = "💼 Projects"
+url = "/projects/"
+weight = 2
+
+[[languages.fr.menu.main]]
+name = "🔍 Search"
+url = "search/"
+weight = 10

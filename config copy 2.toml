@@ -12,36 +12,39 @@ disqusShortname = "https-www-aymandamoun-com"
 [minify]
 disableXML = true
 
-[languages]
-  [languages.en]
-  languageName = ":uk:"
-  weight = 1
+[languages.en]
+languageName = ":uk:"
+weight = 1
 
-      [[languages.en.menu.main]]
-      name = "📃 Resume"
-      weight = 1
-      url = "about/"
+[[languages.en.menu.main]]
+name = "Resume"
+weight = 1
+url = "about/"
 
-      [[languages.en.menu.main]]
-      name = "📌 Posts"
-      url = "posts"
-      weight = 3
+[[languages.en.menu.main]]
+name = "Posts"
+url = "posts"
+weight = 5
 
-      [[languages.en.menu.main]]
-      identifier = "projects"
-      name = "💼 Projects"
-      url = "/projects/"
-      weight = 2
+[[languages.en.menu.main]]
+name = "Archive"
+url = "archives"
+weight = 5
 
-      [[languages.en.menu.main]]
-      name = "🔍 Search"
-      url = "search/"
-      weight = 10
+[[languages.en.menu.main]]
+name = "Search"
+url = "search/"
+weight = 10
 
-      [[languages.en.menu.main]]
-      name = "🤙 Contact me"
-      weight = 5
-      url = "contact/"
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Categories"
+url = "categories/"
+weight = 10
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
@@ -49,7 +52,7 @@ home = [ "HTML", "RSS", "JSON" ]
 [params]
 env = "production"
 description = "Blog by Ayman DAMOUN - //"
-author = "ayman"
+author = "Loner"
 defaultTheme = "auto"
 ShowShareButtons = true
 ShowReadingTime = true
@@ -63,26 +66,28 @@ images = [ "papermod-cover.png" ]
   enabled = true
   title = "Ayman DAMOUN"
   subtitle = "Robotics Artificial Intelligence Engineer"
-  imageUrl = "/images/poto.jpg"
+  imageUrl = "images/poto.jpg"
   imageTitle = "my image"
-  imageWidth = 200
-  imageHeight = 200
+
     [[params.profileMode.buttons]]
     name = "Archives"
     url = "archives"
 
     [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+    [[params.profileMode.buttons]]
     name = "All Posts"
     url = "posts"
 
-    [[params.profileMode.buttons]]
-    name = "Categories"
-    url = "categories/"
-
   [params.homeInfoParams]
-  Title = "Welcome to my website"
+  Title = "Welcome to Gain N Go"
   Content = """
-Welcome
+Welcome to demo of hugo's theme PaperMod.
+- **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+- Do give a 🌟 on Github !
+- PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 """
 
   [[params.socialIcons]]
@@ -93,10 +98,6 @@ Welcome
   name = "LinkedIn"
   url = "https://www.linkedin.com/in/aymandamoun/"
 
-  [[params.socialIcons]]
-  name = "email"
-  url = "mailto:damounayman@gmail.com"
-  [[params.socialIcons]]
 
 [taxonomies]
 category = "categories"
@@ -126,3 +127,7 @@ disableInlineCSS = true
 [services.twitter]
 disableInlineCSS = true
 
+
+[languages.fr]
+languageName = ":fr:"
+title = "damoun ayman"
