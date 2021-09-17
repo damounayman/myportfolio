@@ -8,4 +8,4 @@ tags = [
 ]
 +++
 
-{{< embed-pdf url="./pdf/hugo-embed-pdf-sample.pdf" >}}
+
