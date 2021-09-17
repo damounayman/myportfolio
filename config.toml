@@ -13,7 +13,7 @@ enableEmoji = true
 
 [params]
 author = "Ayman DAMOUN"
-description = "John Doe's personal website"
+description = "Ayman DAMOUN's personal website"
 keywords = "blog,developer,personal"
 info = ["Robotics Artificial Intelligence", "Engineer"]
 avatarURL = "images/poto.jpg"
