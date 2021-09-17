@@ -16,6 +16,7 @@ author = "Ayman DAMOUN"
 description = "Ayman DAMOUN's personal website"
 keywords = "blog,developer,personal"
 info = ["Robotics Artificial Intelligence", "Engineer"]
+favicon = "images/favicon-16x16.png"  
 avatarURL = "images/poto.jpg"
 #gravatar = "john.doe@example.com"
 footerContent = "Be the change that you want to see in the world."
