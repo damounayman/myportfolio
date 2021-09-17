@@ -1,11 +1,17 @@
-<script type="text/javascript" src= '{{"/" | relURL}}/js/pdf-js/build/pdf.js'></script>
+<script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
+
+<!-- {{"/" | relURL}} -->
 <style>
 #the-canvas {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem; 
+  background-clip: border-box;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
   direction: ltr;
-  width: 100%;
+  width: 75%;
   height: auto;
   display: none;
+  -moz-box-align: center;
 }
 
 #paginator {
@@ -42,10 +48,12 @@
 </style>
 
 <div id="paginator">
-    <button id="prev">Previous</button>
-    <button id="next">Next</button>
-    &nbsp; &nbsp;
-    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+    <button class="btn btn-primary btn-lg" id="prev">Previous</button>
+    &nbsp; 
+    <span class="mt-1"><span id="page_num"></span> / <span id="page_count"></span></span>
+    &nbsp;
+    <button class="btn btn-primary btn-lg" id="next">Next</button>
+
 </div>
 <div id="embed-pdf-container">
     <div id="loadingWrapper">
@@ -60,9 +68,9 @@ window.onload = function() {
 // header on that server.
 var url = "{{.Site.BaseURL}}" + '{{ .Get "url" }}';
 
-var hidePaginator = "{{ .Get "hidePaginator" }}" === "true";
-var hideLoader = "{{ .Get "hideLoader" }}" === "true";
-var selectedPageNum = parseInt("{{ .Get "renderPageNum" }}") || 1;
+var hidePaginator = '{{ .Get "hidePaginator" }}' === "true";
+var hideLoader = '{{ .Get "hideLoader" }}' === "true";
+var selectedPageNum = parseInt('{{ .Get "renderPageNum" }}') || 1;
 
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
 var pdfjsLib = window['pdfjs-dist/build/pdf'];

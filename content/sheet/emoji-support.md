@@ -8,5 +8,4 @@ tags = [
 ]
 +++
 
-{{< embed-pdf url="./data/Docker.pdf" >}}
-{{< embed-pdf url="./path/to/pdf/file/example.pdf" hideLoader="true" >}}
+{{< embed-pdf url="/data/Docker.pdf" >}}
