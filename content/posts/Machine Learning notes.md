@@ -65,29 +65,75 @@ $$h_\theta(x)\ge 0.5\Rightarrow y=1\quad h_\theta(x)<0.5\Rightarrow y=0$$
 $$J(\theta)=\frac{1}{m}\sum_{i=1}^{m}\mathrm{Cost}(h_\theta(x^{(i)}),y^{(i)})$$
 
 $$
-\left\{
-    \begin{array}{ll}
-        \mathrm{Cost}(h_\theta(x),y) = -\log(h_\theta(x)) & \text{if y = 1} \\
-        \mathrm{Cost}(h_\theta(x),y) = -\log(1-h_\theta(x)) &  \text{if y = 0}
-    \end{array}
-\right.
+\mathrm{Cost}(h_\theta(x),y) = -\log(h_\theta(x)) \quad \quad \text{if y = 1} \newline
+\mathrm{Cost}(h_\theta(x),y) = -\log(1-h_\theta(x)) \quad \text{if y = 0}
 $$
 
-### Examples
+$$
+\mathrm{Cost}(h_\theta(x),y) = 0 \quad \text{ if } h_\theta(x) = y \newline
+\mathrm{Cost}(h_\theta(x),y) \rightarrow \infty \quad \text{ if } y = 0\; \mathrm{and} \; h_\theta(x) \rightarrow 1\newline
+\mathrm{Cost}(h_\theta(x),y) \rightarrow \infty \quad \text{ if } y = 1 \; \mathrm{and} \; h_\theta(x) \rightarrow 0
+$$
 
-{{< math.inline >}}
-<p>
-Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
-</p>
-{{</ math.inline >}}
+$$J(\theta)=\frac{1}{m}\left[\sum_{i=1}^{m}y_{i}\log h_\theta(x_{i})+(1-y_{i})\log(1-h_\theta(x_i))\right]$$
 
-Block math:
+### Gradient Descent
+Repeat
 $$
- J(\theta)=\frac{1}{2m}\sum_{i=1}^{m} (h_\theta(x^{(i)})-y^{(i)})^2
+\theta_j:=\theta_j-\alpha \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x^{(i)}_j
 $$
+ simultaneously update for every j=\{0,...,n\}
+- Advanced Optimization Matlab
+
+**Function**
+```matlab
+function [jVal, gradient] = costFunction(theta)
+  jVal = [...code to compute J(theta)...];
+  gradient = [...code to compute derivative of J(theta)...];
+end
+```
+**Fminunc**
+```matlab
+options = optimset('GradObj', 'on', 'MaxIter', 100);
+initialTheta = zeros(2,1);
+   [optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
+```
+### Multiclass Classification
+
+**One-vs-all**
+ Train a logistic regression classifier {{< math.inline >}}\(h_\theta(x)\){{</ math.inline >}}  for each class i to predict the probability that {{< math.inline >}}\(y = i\){{</ math.inline >}} .
 $$
-\min _{x^{(1)}, x^{(2)}, \ldots, x^{\left(n_{m}\right)}}
+h^i(\theta)=P(y=i/x;\theta)
 $$
+To make a prediction on a new x, pick the class i that maximizes {{< math.inline >}}\(h_\theta(x)\){{</ math.inline >}}.
+
+# Overfitting
+
+Underfit ==> high bias
+
+Overfit ==> high variance
+
+There are two main options to address the issue of overfitting:
+- Reduce the number of features.
+- Regularization: Keep all the features, but reduce the magnitude of parameters  {{< math.inline >}}\(h_\theta(x)\){{</ math.inline >}}.
+
+- **Regularization Cost Function**
 $$
- \frac{1}{2} \sum_{i=1}^{n_{m}} \sum_{j: r(i, j)=1}\left(\left(\theta^{(j)}\right)^{T} x^{(i)}-y^{(i, j)}\right)^{2}+\frac{\lambda}{2} \sum_{i=1}^{n_{m}} \sum_{k=1}^{n}\left(\theta_{k}^{(i)}\right)^{2}
+J(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(h_\theta(x^{(i)}-y^{(i)})^2+\lambda \sum_{j=1}^{n} \theta_j^2
 $$
+- **Gradient Descent**
+$$
+ \text{Repeat}\ \lbrace \newline \ \ \ \ \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} $$
+$$\\ \ \ \ \ \theta_j := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) + \frac{\lambda}{m}\theta_j \right] $$ $$\ \ \ \ \ \ \ \ \ \ j \in \lbrace 1,2...n\rbrace\newline  \rbrace 
+$$
+
+- **Normal Equation**
+$$
+\theta = \left( X^TX + \lambda \cdot L \right)^{-1} X^Ty
+$$ 
+
+$$
+ \text{where} \;L = \begin{bmatrix} 0 & & & & \\ & & 1 & & \\ & & & \ddots & \\ & & & & 1 \newline\end{bmatrix}
+$$
+
+If m < n, then $X^TX$ is non-invertible. However, when we add the term $\lambda L$, then $X^TX+\lambda L$ becomes invertible.
