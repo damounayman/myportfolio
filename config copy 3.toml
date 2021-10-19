@@ -7,8 +7,6 @@ enableRobotsTXT = true
 buildDrafts = true
 buildFuture = true
 buildExpired = true
-ShowShareButtons = true
-ShowPostNavLinks = true
 disqusShortname = "https-www-aymandamoun-com"
 
 [minify]
@@ -56,9 +54,7 @@ defaultTheme = "auto"
 ShowShareButtons = true
 ShowReadingTime = true
 displayFullLangName = true
-ShowShareButtons = true
 ShowPostNavLinks = true
-
 ShowBreadCrumbs = true
 ShowToc = true
 favicon = "/images/favicon.png"
@@ -79,7 +75,7 @@ images = [ "papermod-cover.png" ]
     [[params.profileMode.buttons]]
     name = "All Posts"
     url = "posts"
-    
+
     [[params.profileMode.buttons]]
     name = "Categories"
     url = "categories/"

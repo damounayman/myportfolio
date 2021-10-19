@@ -2,8 +2,7 @@
 title: "Design of a video projector remote control"
 date: 2018-07-07
 draft: false
-weight: 2
-hidemeta: true
+weight: 4
 cover:
   image: https://i.ibb.co/jGQq7YR/remote.png
 ---

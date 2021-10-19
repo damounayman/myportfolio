@@ -2,8 +2,7 @@
 title: "Design of a cyber physical production cell"
 date: 2019-07-07
 draft: false
-weight: 2
-hidemeta: true
+weight: 3
 cover:
   image: https://i.ibb.co/cJfcRhm/smart-factory.jpg
 ---

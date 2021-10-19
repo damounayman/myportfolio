@@ -1,11 +1,12 @@
 ---
-author: Hugo Authors
-title: Machine Learning notes
+author: Ayman DAMOUN
+title: Machine learning basics
 date: 2021-03-08
 description: My notes I took while taking Machine Learning taught by Andrew Ng on Coursera.
 math: true
 ---
-
+In the following post I will present my notes of the course  Machine Learning by Andrew Ng.
+The course can be found at coursera [Link](https://www.coursera.org/learn/machine-learning). In addition the material and my assignment solutions are on my github repository [Link](https://www.coursera.org/learn/machine-learning).
 {{< math.inline >}}
 {{ if or .Page.Params.math .Site.Params.math }}
 <!-- KaTeX -->
@@ -133,7 +134,7 @@ $$
 $$ 
 
 $$
- \text{where} \;L = \begin{bmatrix} 0 & & & & \\ & & 1 & & \\ & & & \ddots & \\ & & & & 1 \newline\end{bmatrix}
+ \text{where} \;L = \begin{bmatrix} 0 & & & & \\\\ & & 1 & & \\\\ & & & \ddots & \\\\ & & & & 1 \newline\end{bmatrix}
 $$
 
-If m < n, then $X^TX$ is non-invertible. However, when we add the term $\lambda L$, then $X^TX+\lambda L$ becomes invertible.
+If m < n, then $X^TX$ is non-invertible. However, when we add the term  {{< math.inline >}}\(\lambda L\){{</ math.inline >}}, then {{< math.inline >}}\(X^TX+\lambda L\){{</ math.inline >}} becomes invertible.
