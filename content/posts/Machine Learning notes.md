@@ -2,7 +2,7 @@
 author: Hugo Authors
 title: Machine Learning notes
 date: 2021-03-08
-description: A brief guide to setup KaTeX
+description: My notes I took while taking Machine Learning taught by Andrew Ng on Coursera.
 math: true
 ---
 
@@ -29,6 +29,49 @@ math: true
 - {{< math.inline >}}\(\alpha\):{{</ math.inline >}} Learning Rate
 
 ![your_img](https://i.ibb.co/d23xpZM/Linear-regression.png#center)
+
+- **Hypothesis**: {{< math.inline >}}\(h_\theta(x)=\theta^Tx\) with \(x_0=1\){{</ math.inline >}}.
+- **Parameters**: {{< math.inline >}}\(\theta_0,\theta_1,...,\theta_n\){{</ math.inline >}}.
+- **Cost function**:
+$$
+J(\theta)=\frac{1}{2m}\sum_{i=1}^{m} (h_\theta(x^{(i)})-y^{(i)})^2
+$$
+- **Gradient descent**: Repeat
+$$
+\theta_j:=\theta_j-\alpha \frac{\partial}{\partial \theta_j} J(\theta)
+$$
+ simultaneously update for every j=\{0,...,n\}
+- **Feature Scaling**: for fast convergence, Get every feature into approximately a {{< math.inline >}}\(-1\leq x_i\leq 1\){{</ math.inline >}} range
+
+# Normal Equation
+$$
+\theta=(X^TX)^{-1}X^Ty
+$$
+There is no need to do feature scaling with the normal equation.
+### Comparaison between Normal Equation and Gradient descent
+| Gradient Descent           | Normal Equation         |
+|----------------------------|-------------------------|
+| Need to choose α           | No need to choose α     |
+| Needs many iterations      | No need to iterate      |
+| {{< math.inline >}}\(O(kn^2)\){{</ math.inline >}}   | {{< math.inline >}}\(O(n^3) for X^TX\){{</ math.inline >}}     |
+| Works well when n is large | Slow if n is very large |
+
+# Classification
+- Sigmoid function:
+$$h_\theta(x)=p(y=1/x;\theta)=\frac{1}{1+\exp{-\theta^Tx}}$$
+- Decision Boundar:
+$$h_\theta(x)\ge 0.5\Rightarrow y=1\quad h_\theta(x)<0.5\Rightarrow y=0$$
+- Logistic regression cost fonction:
+$$J(\theta)=\frac{1}{m}\sum_{i=1}^{m}\mathrm{Cost}(h_\theta(x^{(i)}),y^{(i)})$$
+
+$$
+\left\{
+    \begin{array}{ll}
+        \mathrm{Cost}(h_\theta(x),y) = -\log(h_\theta(x)) & \text{if y = 1} \\
+        \mathrm{Cost}(h_\theta(x),y) = -\log(1-h_\theta(x)) &  \text{if y = 0}
+    \end{array}
+\right.
+$$
 
 ### Examples
 
