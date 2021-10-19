@@ -28,8 +28,7 @@ math: true
 - m: number of training set
 - {{< math.inline >}}\(\alpha\):{{</ math.inline >}} Learning Rate
 
-![Example image](/static/poto-modified.png)
-
+![your_img](https://i.ibb.co/d23xpZM/Linear-regression.png#center)
 
 ### Examples
 
