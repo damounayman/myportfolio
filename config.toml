@@ -7,17 +7,16 @@ enableRobotsTXT = true
 buildDrafts = true
 buildFuture = true
 buildExpired = true
-ShowShareButtons = true
-ShowPostNavLinks = true
 disqusShortname = "https-www-aymandamoun-com"
+
 
 [minify]
 disableXML = true
+minifyOutput = true
 
 [languages]
   [languages.en]
   languageName = ":uk:"
-  weight = 1
 
       [[languages.en.menu.main]]
       name = "📃 Resume"
@@ -53,15 +52,21 @@ env = "production"
 description = "Blog by Ayman DAMOUN - //"
 author = "ayman"
 defaultTheme = "auto"
-ShowShareButtons = true
+disableThemeToggle = false
 ShowReadingTime = true
-displayFullLangName = true
 ShowShareButtons = true
 ShowPostNavLinks = true
-
 ShowBreadCrumbs = true
-ShowToc = true
-favicon = "/images/favicon.png"
+ShowCodeCopyButtons = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = true
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = true
+
+
 images = [ "papermod-cover.png" ]
 
   [params.profileMode]
@@ -130,7 +135,3 @@ disableInlineCSS = true
 
 [services.twitter]
 disableInlineCSS = true
-
-
-[params.assets]
-favicon = "/images/favicon.png"
