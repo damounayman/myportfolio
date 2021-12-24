@@ -1,12 +1,12 @@
 ---
 author: Ayman DAMOUN
-title: Machine learning basics
+title: Machine Learning basics
 date: 2021-03-08
-description: My notes I took while taking Machine Learning taught by Andrew Ng on Coursera.
+description: Notes that I took while taking Machine Learning MOOC taught by Andrew Ng on Coursera.
 math: true
 ---
 In the following post I will present my notes of the course  Machine Learning by Andrew Ng.
-The course can be found at coursera [Link](https://www.coursera.org/learn/machine-learning). In addition the material and my assignment solutions are on my github repository [Link](https://www.coursera.org/learn/machine-learning).
+The course can be found at coursera [Link](https://www.coursera.org/learn/machine-learning). In addition the material and my assignment solutions are on my github repository [Link](https://www.coursera.org/learn/machine-learning). So let's start!
 {{< math.inline >}}
 {{ if or .Page.Params.math .Site.Params.math }}
 <!-- KaTeX -->
@@ -17,7 +17,7 @@ The course can be found at coursera [Link](https://www.coursera.org/learn/machin
 {{</ math.inline >}}
 
 # Vocabulary
-
+In this section, I will give some definitions.
 - **Machine Learning**: Field of study that gives computers the ability to learn
      without being explicitly programmed.
 - **Supervised Learning**: In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output. Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output.
