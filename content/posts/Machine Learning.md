@@ -24,9 +24,14 @@ In this section, I will give some definitions related to machine learning.
 - **Supervised Learning**: In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output. Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output.
 - **Unsupervised Learning**: Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables. We can derive this structure by clustering the data based on relationships among the variables in the data.
 
+- **Reinforcement Learning**: The goal of reinforcement learning is for an agent to learn how to evolve in an environment.
+
+This is a machine learning Taxonomy
 ![your_img](https://i.ibb.co/0VpVPdX/machine-learning.png#center)
 
 # Linear regression
+
+ Linear regression is used for finding linear relationship between target and one or more predictors (features).
 
 - n: number of features
 - m: number of training set
