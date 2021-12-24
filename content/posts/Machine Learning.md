@@ -36,13 +36,13 @@ This is a machine learning Taxonomy:
 ![your_img](https://i.ibb.co/d23xpZM/Linear-regression.png#center)
 
 let:
-- n: number of features;
-- m: number of training set;
-- {{< math.inline >}}\(\alpha\):{{</ math.inline >}} Learning Rate;
+- n: number of features ;
+- m: number of training set ;
+- {{< math.inline >}}\(\alpha\):{{</ math.inline >}} Learning Rate ;
 
-- **Hypothesis**: {{< math.inline >}}\(h_\theta(x)=\theta^Tx\) with \(x_0=1\){{</ math.inline >}};
-- **Parameters**: {{< math.inline >}}\(\theta_0,\theta_1,...,\theta_n\){{</ math.inline >}};
-- **Cost function**:
+- **Hypothesis**: {{< math.inline >}}\(h_\theta(x)=\theta^Tx\) with \(x_0=1\){{</ math.inline >}} (linear model) ;
+- **Parameters**: {{< math.inline >}}\(\theta_0,\theta_1,...,\theta_n\){{</ math.inline >}} ;
+- **Cost function** (Loss function):
 $$
 J(\theta)=\frac{1}{2m}\sum_{i=1}^{m} (h_\theta(x^{(i)})-y^{(i)})^2
 $$
