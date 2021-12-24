@@ -59,7 +59,6 @@ pre {
     border-radius: var(--radius);
     padding: 0 5px;
     font-size: 14px;
-    user-select: none;
 }
 
 div.highlight:hover .copy-code,
