@@ -32,12 +32,13 @@ This is a machine learning Taxonomy:
 # Linear regression
 
  Linear regression is used for finding linear relationship between target and one or more predictors (features).
+
+![your_img](https://i.ibb.co/d23xpZM/Linear-regression.png#center)
+
 let:
 - n: number of features
 - m: number of training set
 - {{< math.inline >}}\(\alpha\):{{</ math.inline >}} Learning Rate
-
-![your_img](https://i.ibb.co/d23xpZM/Linear-regression.png#center)
 
 - **Hypothesis**: {{< math.inline >}}\(h_\theta(x)=\theta^Tx\) with \(x_0=1\){{</ math.inline >}}.
 - **Parameters**: {{< math.inline >}}\(\theta_0,\theta_1,...,\theta_n\){{</ math.inline >}}.
