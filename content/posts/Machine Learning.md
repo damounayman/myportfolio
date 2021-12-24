@@ -26,13 +26,13 @@ In this section, I will give some definitions related to machine learning.
 
 - **Reinforcement Learning**: The goal of reinforcement learning is for an agent to learn how to evolve in an environment.
 
-This is a machine learning Taxonomy
+This is a machine learning Taxonomy:
 ![your_img](https://i.ibb.co/0VpVPdX/machine-learning.png#center)
 
 # Linear regression
 
  Linear regression is used for finding linear relationship between target and one or more predictors (features).
-
+let:
 - n: number of features
 - m: number of training set
 - {{< math.inline >}}\(\alpha\):{{</ math.inline >}} Learning Rate
