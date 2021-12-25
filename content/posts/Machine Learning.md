@@ -46,7 +46,11 @@ let:
 $$
 J(\theta)=\frac{1}{2m}\sum_{i=1}^{m} (h_\theta(x^{(i)})-y^{(i)})^2
 $$
-- **Gradient descent**: Repeat
+- **Gradient descent**: 
+
+Gradient descent is an optimization algorithm used to minimize afunction by iteratively moving in the direction of the negative of the gradient. In machine learning, we use gradient descent to update the parameters of our model. Parameters refer to coefficients in Linear Regression and weights in neural networks.
+
+Repeat
 $$
 \theta_j:=\theta_j-\alpha \frac{\partial}{\partial \theta_j} J(\theta)
 $$
