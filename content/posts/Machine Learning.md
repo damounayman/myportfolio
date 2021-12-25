@@ -55,9 +55,10 @@ $$
 \theta_j:=\theta_j-\alpha \frac{\partial}{\partial \theta_j} J(\theta)
 $$
 }simultaneously update for every j=\{0,...,n\}
-- **Feature Scaling**: for fast convergence, Get every feature into approximately a {{< math.inline >}}\(-1\leq x_i\leq 1\){{</ math.inline >}} range
+- **Feature Scaling**: is a method used to normalize the range of independent variables or features of data. For fast convergence, Get every feature into approximately a {{< math.inline >}}\(-1\leq x_i\leq 1\){{</ math.inline >}} range.
 
-# Normal Equation
+# Normal Equation:
+Is an analytical solution to the linear regression problem with a least-squares cost function.
 $$
 \theta=(X^TX)^{-1}X^Ty
 $$
