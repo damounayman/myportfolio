@@ -182,7 +182,7 @@ $$ J(\Theta) = - \frac{1}{m} \sum_{i=1}^m \sum_{k=1}^K [y^{(i)}_k \log ((h_\Thet
 
 - **Back propagation Algorithm**
 
-Given training set {{< math.inline >}}\(\lbrace (x^{(1)}, y^{(1)}) \cdots (x^{(m)}, y^{(m)})\rbrace\){{</ math.inline >}} \\
+Given training set {{< math.inline >}}\(\lbrace (x^{(1)}, y^{(1)}) \cdots (x^{(m)}, y^{(m)})\rbrace\){{</ math.inline >}} \
 Set {{< math.inline >}}\(\Delta^{(l)}_{i,j}\){{</ math.inline >}}:= 0 for all (l,i,j), (hence you end up having a matrix full of zeros).
 
 For training example t =1 to m:
