@@ -154,3 +154,13 @@ $$
 If m < n, then $X^TX$ is non-invertible. However, when we add the term  {{< math.inline >}}\(\lambda L\){{</ math.inline >}}, then {{< math.inline >}}\(X^TX+\lambda L\){{</ math.inline >}} becomes invertible.
 
 # Neural Networks
+
+Neural networks are a class of models that are built with layers.Commonly used types of neural networks include convolutional and recurrent neural networks.
+
+- **Architecture**
+
+![your_img](https://i.ibb.co/GFFYJZy/neuralnetwork.png#center)
+
+By noting i the $i^{th}$ layer of the network and j the $j^{th}$ hidden unit of the layer, we have:
+$$z_j^{[i]}=w_j^{[i]^T}x+b_j^{[i]}$$
+where we note $w$, b, z the weight, bias and output respectively.
