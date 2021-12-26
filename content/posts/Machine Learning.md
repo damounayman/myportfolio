@@ -187,15 +187,15 @@ Set {{< math.inline >}}\(\Delta^{(l)}_{i,j}\){{</ math.inline >}}:= 0 for all (l
 
 For training example t =1 to m:
 
-    - Set {{< math.inline >}}\(a^{(1)} := x^{(t)}\){{</ math.inline >}}
-    - Perform forward propagation to compute {{< math.inline >}}\(a^{(l)}\){{</ math.inline >}} for l=2,3,…,L
-    - Using {{< math.inline >}}\(y^{(t)}\){{</ math.inline >}}, compute {{< math.inline >}}\(\delta^{(L)} = a^{(L)} - y^{(t)}\){{</ math.inline >}}
+  - Set {{< math.inline >}}\(a^{(1)} := x^{(t)}\){{</ math.inline >}}
+  - Perform forward propagation to compute {{< math.inline >}}\(a^{(l)}\){{</ math.inline >}} for l=2,3,…,L
+  - Using {{< math.inline >}}\(y^{(t)}\){{</ math.inline >}}, compute {{< math.inline >}}\(\delta^{(L)} = a^{(L)} - y^{(t)}\){{</ math.inline >}}
 
-    Where L is our total number of layers and {{< math.inline >}}\(a^{(L)}\){{</ math.inline >}} is the vector of outputs of the activation units for the last layer. So our "error values" for the last layer are simply the differences of our actual results in the last layer and the correct outputs in y. To get the delta values of the layers before the last layer, we can use an equation that steps us back from right to left:
-    -  Compute {{< math.inline >}}\(\delta^{(L-1)}, \delta^{(L-2)},\dots,\delta^{(2)}\){{</ math.inline >}} using  {{< math.inline >}}\(\delta^{(l)} = ((\Theta^{(l)})^T \delta^{(l+1)})\ .*\ a^{(l)}\ .*\ (1 - a^{(l)})\){{</ math.inline >}}
+  Where L is our total number of layers and {{< math.inline >}}\(a^{(L)}\){{</ math.inline >}} is the vector of outputs of the activation units for the last layer. So our "error values" for the last layer are simply the differences of our actual results in the last layer and the correct outputs in y. To get the delta values of the layers before the last layer, we can use an equation that steps us back from right to left:
+  -  Compute {{< math.inline >}}\(\delta^{(L-1)}, \delta^{(L-2)},\dots,\delta^{(2)}\){{</ math.inline >}} using  {{< math.inline >}}\(\delta^{(l)} = ((\Theta^{(l)})^T \delta^{(l+1)})\ .*\ a^{(l)}\ .*\ (1 - a^{(l)})\){{</ math.inline >}}
 
-    The delta values of layer l are calculated by multiplying the delta values in the next layer with the theta matrix of layer l. We then element-wise multiply that with a function called g', or g-prime, which is the derivative of the activation function g evaluated with the input values given by {{< math.inline >}}\(z^{(l)}\){{</ math.inline >}}. 
-    - {{< math.inline >}}\(\Delta^{(l)}_{i,j} := \Delta^{(l)}_{i,j} + a_j^{(l)} \delta_i^{(l+1)}\){{</ math.inline >}} or with vectorization, {{< math.inline >}}\(\Delta^{(l)} := \Delta^{(l)} + \delta^{(l+1)}(a^{(l)})^T\){{</ math.inline >}}
+  The delta values of layer l are calculated by multiplying the delta values in the next layer with the theta matrix of layer l. We then element-wise multiply that with a function called g', or g-prime, which is the derivative of the activation function g evaluated with the input values given by {{< math.inline >}}\(z^{(l)}\){{</ math.inline >}}. 
+  - {{< math.inline >}}\(\Delta^{(l)}_{i,j} := \Delta^{(l)}_{i,j} + a_j^{(l)} \delta_i^{(l+1)}\){{</ math.inline >}} or with vectorization, {{< math.inline >}}\(\Delta^{(l)} := \Delta^{(l)} + \delta^{(l+1)}(a^{(l)})^T\){{</ math.inline >}}
 
 Hence we update our new {{< math.inline >}}\(\Delta\){{</ math.inline >}} matrix.
     $$
