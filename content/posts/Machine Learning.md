@@ -161,6 +161,6 @@ Neural networks are a class of models that are built with layers.Commonly used t
 
 ![your_img](https://i.ibb.co/GFFYJZy/neuralnetwork.png#center)
 
-By noting i the $i^{th}$ layer of the network and j the $j^{th}$ hidden unit of the layer, we have:
+By noting i the $i^{th}$ layer of the network and j the {{< math.inline >}}\(j^{th}\){{</ math.inline >}} hidden unit of the layer, we have:
 $$z_j^{[i]}=w_j^{[i]^T}x+b_j^{[i]}$$
-where we note $w$, b, z the weight, bias and output respectively.
+where we note {{< math.inline >}}\(w\){{</ math.inline >}}, b, z the weight, bias and output respectively.
