@@ -153,4 +153,4 @@ $$
 
 If m < n, then $X^TX$ is non-invertible. However, when we add the term  {{< math.inline >}}\(\lambda L\){{</ math.inline >}}, then {{< math.inline >}}\(X^TX+\lambda L\){{</ math.inline >}} becomes invertible.
 
-- **Neural Networks**
+# Neural Networks
