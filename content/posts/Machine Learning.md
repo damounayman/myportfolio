@@ -200,9 +200,9 @@ For training example t =1 to m:
 Hence we update our new {{< math.inline >}}\(\Delta\){{</ math.inline >}} matrix.
 
 $$
-D_{i, j}^{(l)} &:=\frac{1}{m}\left(\Delta_{i, j}^{(l)}+\lambda \Theta_{i, j}^{(l)}\right), \text { If }] \neq 0 . $$
+D_{i, j}^{(l)} =\frac{1}{m}\left(\Delta_{i, j}^{(l)}+\lambda \Theta_{i, j}^{(l)}\right), \text { If }] \neq 0 . $$
 
-$$ D_{i, j}^{(l)} &:=\frac{1}{m} \Delta_{i, j}^{(l)} \text { If } j=0 $$
+$$ D_{i, j}^{(l)} =\frac{1}{m} \Delta_{i, j}^{(l)} \text { If } j=0 $$
 
 
 D is used as an "accumulator" to add up our values as we go along and eventually compute our partial derivative. Thus we get {{< math.inline >}}\(
