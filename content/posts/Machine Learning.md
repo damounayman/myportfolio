@@ -166,5 +166,6 @@ $$z_j^{[i]}=w_j^{[i]^T}x+b_j^{[i]}$$
 where we note {{< math.inline >}}\(w\){{</ math.inline >}}, b, z the weight, bias and output respectively.
 
 $$h_\theta(x)=a^{(j+1)}=g(z^{(j+1)})$$
-where {{< math.inline >}}\(z^{(j+1)}=\Theta^{(j)}a^{(j)}\){{</ math.inline >}}\\
+where {{< math.inline >}}\(z^{(j+1)}=\Theta^{(j)}a^{(j)}\){{</ math.inline >}}
+
 If network has {{< math.inline >}}\(s_j\){{</ math.inline >}} units in layer j and {{< math.inline >}}\(s_{j+1}\){{</ math.inline >}} units in layer j+1, then {{< math.inline >}}\(\Theta^{(j)}\){{</ math.inline >}} will be of dimension {{< math.inline >}}\(s_{j+1}*s_{j}+1\){{</ math.inline >}}.
