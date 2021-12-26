@@ -169,3 +169,13 @@ $$h_\theta(x)=a^{(j+1)}=g(z^{(j+1)})$$
 where {{< math.inline >}}\(z^{(j+1)}=\Theta^{(j)}a^{(j)}\){{</ math.inline >}}
 
 If network has {{< math.inline >}}\(s_j\){{</ math.inline >}} units in layer j and {{< math.inline >}}\(s_{j+1}\){{</ math.inline >}} units in layer j+1, then {{< math.inline >}}\(\Theta^{(j)}\){{</ math.inline >}} will be of dimension {{< math.inline >}}\(s_{j+1}*s_{j}+1\){{</ math.inline >}}.
+
+- **Cost Function**
+
+Let's first define a few variables that we will need to use:
+
+- L = total number of layers in the network
+- {{< math.inline >}}\(S_l\){{</ math.inline >}} = number of units (not counting bias unit) in layer l
+- K = number of output units/classes
+
+$$ J(\Theta) = - \frac{1}{m} \sum_{i=1}^m \sum_{k=1}^K [y^{(i)}_k \log ((h_\Theta (x^{(i)}))_k) + (1 - y^{(i)}_k) \\ \log (1 - (h_\Theta(x^{(i)}))_k)] + \frac{\lambda}{2m}\sum_{l=1}^{L-1} \sum_{i=1}^{s_l} \sum_{j=1}^{s_{l+1}} ( \Theta_{j,i}^{(l)})^2 $$
