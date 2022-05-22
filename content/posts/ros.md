@@ -16,5 +16,9 @@ The course can be found at coursera [Link](https://www.coursera.org/learn/machin
 {{ end }}
 {{</ math.inline >}}
 
-# ROS Node:
-A ROS node is a data or information processing software unit. All functional requirements for a ROS application will be implemented as ROS Nodes. ROS Node is implemented in Python or C++ and the idea of ROS nodes ensures that we can have functional modularity in large ROS projects. In other words, ROS nodes are building blocks in the context of a large software application.\\
+# Vocabulary
+In this section, I will give some definitions related to
+- **ROS Node**:
+A ROS node is a data or information processing software unit. All functional requirements for a ROS application will be implemented as ROS Nodes. ROS Node is implemented in Python or C++ and the idea of ROS nodes ensures that we can have functional modularity in large ROS projects. In other words, ROS nodes are building blocks in the context of a large software application.
+
+- **ROS Topic**: A ROS topic is an entity that is used to  transport information between nodes.
