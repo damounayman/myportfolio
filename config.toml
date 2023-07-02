@@ -1,7 +1,7 @@
 baseURL = "/"
-title = "Ayman DAMOUN"
 paginate = 5
-theme = "PaperMod"
+theme = "LoveIt"
+title = "Ayman DAMOUN"
 enableInlineShortcodes = true
 enableRobotsTXT = true
 buildDrafts = true
