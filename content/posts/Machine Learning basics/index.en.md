@@ -6,7 +6,7 @@ lastmod: 2023-06-06T21:29:01+08:00
 draft: false
 author: "Ayman Damoun"
 authorLink: "https://www.linkedin.com/in/aymandamoun/"
-description: "Discover what the Hugo - LoveIt theme is all about and the core-concepts behind it."
+description: "This post presents some important basics that every machine learning engineer needs to know."
 images: []
 resources:
 - name: "featured-image"
@@ -21,13 +21,13 @@ toc:
   auto: false
 ---
 
-Discover what the Hugo - **LoveIt** theme is all about and the core-concepts behind it.
-
+This post presents some important basics that every **machine learning** engineer needs to know.
 <!--more-->
 
 ## 1 Requirements
 
-Thanks to the simplicity of Hugo, [Hugo](https://gohugo.io/) is the only dependency of this theme.
+In the following post I will present my notes of the course  Machine Learning by Andrew Ng.
+The course can be found at coursera [Link](https://www.coursera.org/learn/machine-learning). In addition the material and my assignment solutions are on my github repository [Link](https://github.com/damounayman/Machine-Learning-Stanford). So let's start!
 
 Just install latest version of [:(far fa-file-archive fa-fw): Hugo (> 0.62.0)](https://gohugo.io/getting-started/installing/) for your OS (**Windows**, **Linux**, **macOS**).
 
@@ -39,10 +39,16 @@ Since [Markdown Render Hooks](https://gohugo.io/getting-started/configuration-ma
 Since some features of this theme need to processes :(fab fa-sass fa-fw): SCSS to :(fab fa-css3 fa-fw): CSS, it is recommended to use Hugo **extended** version for better experience.
 {{< /admonition >}}
 
-## 2 Installation
+## 2 Vocabulary
 
-The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you learn more about it by following this [great documentation for beginners](https://gohugo.io/getting-started/quick-start/).
+In this section, I'll present a few definitions:
+* **Machine Learning**: Field of study that gives computers the ability to learn
+     without being explicitly programmed.
+* **Supervised Learning**: In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output. Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output.
+* **Unsupervised Learning**: Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables. We can derive this structure by clustering the data based on relationships among the variables in the data.
+* **Reinforcement Learning**: The goal of reinforcement learning is for an agent to learn how to evolve in an environment.
 
+![Basic configuration preview](basic-configuration-preview.png "Basic configuration preview")
 ### 2.1 Create Your Project
 
 Hugo provides a `new` command to create a new website:
