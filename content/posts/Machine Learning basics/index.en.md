@@ -1,8 +1,8 @@
 ---
 weight: 1
 title: "Machine Learning basics"
-date: 2020-03-06T21:29:01+08:00
-lastmod: 2020-03-06T21:29:01+08:00
+date: 2023-06-06T21:29:01+08:00
+lastmod: 2023-06-06T21:29:01+08:00
 draft: false
 author: "Ayman Damoun"
 authorLink: "https://www.linkedin.com/in/aymandamoun/"
@@ -10,7 +10,7 @@ description: "Discover what the Hugo - LoveIt theme is all about and the core-co
 images: []
 resources:
 - name: "featured-image"
-  src: "featured-image.jpg"
+  src: "mlbasics-image.jpg"
 
 tags: ["installation", "configuration"]
 categories: ["documentation"]
