@@ -1,0 +1,4 @@
+baseURL = 'https://aymandamoun.com'
+languageCode = 'en-us'
+title = 'Ayman Damoun'
+theme = "hugo-PaperMod"
