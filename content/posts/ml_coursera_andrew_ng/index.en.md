@@ -10,7 +10,7 @@ description: "This post presents some important basics that every machine learni
 images: []
 resources:
 - name: "featured-image"
-  src: "mlbasics-image.jpg"
+  src: "ml_coursera_andrew_ng.png"
 
 tags: ["ML", "AI", "course", "mooc"]
 categories: ["AI"]
@@ -60,7 +60,7 @@ let:
 $$
 J(\theta)=\frac{1}{2m}\sum_{i=1}^{m} (h_\theta(x^{(i)})-y^{(i)})^2
 $$
-- **Gradient descent**: 
+- **Gradient descent**:
 
 Gradient descent is an optimization algorithm used to minimize afunction by iteratively moving in the direction of the negative of the gradient. In machine learning, we use gradient descent to update the parameters of our model. Parameters refer to coefficients in Linear Regression and weights in neural networks. The gradient descent algorithm is presented below:
 
@@ -153,13 +153,13 @@ $$
 - **Gradient Descent**
 $$
  \text{Repeat}\ \lbrace \newline \ \ \ \ \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} $$
-$$\\ \ \ \ \ \theta_j := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) + \frac{\lambda}{m}\theta_j \right] $$ $$\ \ \ \ \ \ \ \ \ \ j \in \lbrace 1,2...n\rbrace\newline  \rbrace 
+$$\\ \ \ \ \ \theta_j := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) + \frac{\lambda}{m}\theta_j \right] $$ $$\ \ \ \ \ \ \ \ \ \ j \in \lbrace 1,2...n\rbrace\newline  \rbrace
 $$
 
 - **Normal Equation**
 $$
 \theta = \left( X^TX + \lambda \cdot L \right)^{-1} X^Ty
-$$ 
+$$
 
 $$
  \text{where} \;L = \begin{bmatrix} 0 & & & & \\\\ & & 1 & & \\\\ & & & \ddots & \\\\ & & & & 1 \newline\end{bmatrix}
@@ -208,7 +208,7 @@ For training example t =1 to m:
   Where L is our total number of layers and {{< math.inline >}}\(a^{(L)}\){{</ math.inline >}} is the vector of outputs of the activation units for the last layer. So our "error values" for the last layer are simply the differences of our actual results in the last layer and the correct outputs in y. To get the delta values of the layers before the last layer, we can use an equation that steps us back from right to left:
   -  Compute {{< math.inline >}}\(\delta^{(L-1)}, \delta^{(L-2)},\dots,\delta^{(2)}\){{</ math.inline >}} using  {{< math.inline >}}\(\delta^{(l)} = ((\Theta^{(l)})^T \delta^{(l+1)})\ .*\ a^{(l)}\ .*\ (1 - a^{(l)})\){{</ math.inline >}}
 
-  The delta values of layer l are calculated by multiplying the delta values in the next layer with the theta matrix of layer l. We then element-wise multiply that with a function called g', or g-prime, which is the derivative of the activation function g evaluated with the input values given by {{< math.inline >}}\(z^{(l)}\){{</ math.inline >}}. 
+  The delta values of layer l are calculated by multiplying the delta values in the next layer with the theta matrix of layer l. We then element-wise multiply that with a function called g', or g-prime, which is the derivative of the activation function g evaluated with the input values given by {{< math.inline >}}\(z^{(l)}\){{</ math.inline >}}.
   - {{< math.inline >}}\(\Delta^{(l)}_{i,j} := \Delta^{(l)}_{i,j} + a_j^{(l)} \delta_i^{(l+1)}\){{</ math.inline >}} or with vectorization, {{< math.inline >}}\(\Delta^{(l)} := \Delta^{(l)} + \delta^{(l+1)}(a^{(l)})^T\){{</ math.inline >}}
 
 Hence we update our new {{< math.inline >}}\(\Delta\){{</ math.inline >}} matrix.
