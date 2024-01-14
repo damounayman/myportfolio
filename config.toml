@@ -184,7 +184,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.png"
+      avatarURL = "/images/avatar.jpg"
       # title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
@@ -506,7 +506,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 出版者信息
       [params.page.seo.publisher]
         name = "xxxx"
-        logoUrl = "/images/avatar.png"
+        logoUrl = "/images/avatar.jpg"
 
   # TypeIt config
   # TypeIt 配置
@@ -679,8 +679,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
-
 # Multilingual
 [languages]
   [languages.en]
@@ -757,7 +755,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         [languages.en.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
+          avatarURL = "/images/avatar.jpg"
           title = ""
           subtitle = "I am a robotic and AI engineer. In an active learning process."
           typeit = true
@@ -843,7 +841,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         [languages.fr.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
+          avatarURL = "/images/avatar.jpg"
           title = ""
           subtitle = "Je suis ingénieur en robotique et en IA. Dans un processus d'apprentissage actif."
           typeit = true
