@@ -1,0 +1,138 @@
+baseURL = "/"
+title = "Ayman DAMOUN"
+paginate = 5
+theme = "hugo-PaperMod"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = true
+buildFuture = true
+buildExpired = true
+disqusShortname = "https-www-aymandamoun-com"
+
+[minify]
+disableXML = true
+
+[languages]
+  [languages.en]
+  languageName = ":uk:"
+  weight = 1
+
+      [[languages.en.menu.main]]
+      name = "📃 Resume"
+      weight = 1
+      url = "about/"
+
+      [[languages.en.menu.main]]
+      name = "📌 Posts"
+      url = "posts"
+      weight = 3
+
+      [[languages.en.menu.main]]
+      identifier = "projects"
+      name = "💼 Projects"
+      url = "/projects/"
+      weight = 2
+
+      [[languages.en.menu.main]]
+      identifier = "cheat sheet"
+      name = "📜 cheat sheet"
+      url = "/sheet/"
+      weight = 4
+
+      [[languages.en.menu.main]]
+      name = "🔍 Search"
+      url = "search/"
+      weight = 10
+
+      [[languages.en.menu.main]]
+      name = "🤙 Contact me"
+      weight = 5
+      url = "contact/"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+env = "production"
+description = "Blog by Ayman DAMOUN - //"
+author = "ayman"
+defaultTheme = "auto"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowToc = true
+favicon = "/images/favicon.png"
+images = [ "papermod-cover.png" ]
+
+  [params.profileMode]
+  enabled = true
+  title = "Ayman DAMOUN"
+  subtitle = "Robotics Artificial Intelligence Engineer"
+  imageUrl = "/images/avatar.jpg"
+  imageTitle = "my image"
+  imageWidth = 350
+  imageHeight = 350
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
+
+    [[params.profileMode.buttons]]
+    name = "All Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "Categories"
+    url = "categories/"
+
+  [params.homeInfoParams]
+  Title = "Welcome to my website"
+  Content = """
+Welcome
+"""
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/damounayman"
+
+  [[params.socialIcons]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/aymandamoun/"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:damounayman@gmail.com"
+  [[params.socialIcons]]
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
+
+
+[params.assets]
+favicon = "/images/favicon.png"
